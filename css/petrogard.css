@@ -40,8 +40,11 @@ p {
 .overskrift {
     text-align: center;
 }
-.rabat_pris {
+.rabatpris {
     color: limegreen;
+}
+.udsolgt {
+    text-decoration: line-through;
 }
 button.modalknap {
     font-family: 'Satisfy', cursive;
