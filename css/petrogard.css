@@ -1,0 +1,62 @@
+/*!
+ * Custom styles af DIG
+ */
+
+
+/*Generelt*/
+
+#html {
+    cursor: pointer;
+}
+body {
+    /*background-color: dimgray;*/
+    margin: 0;
+    padding: 0;
+}
+.header-img-full {
+    background-image: url(../imgs/medium/hvidvin-md.jpg);
+    background-size: cover;
+    height: 285px;
+    background-position: center;
+    text-indent: -9999px;
+    display: block;
+}
+h1 {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 10vw;
+}
+h2 {
+    font-family: 'Satisfy', cursive;
+}
+h4 {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 3vw;
+}
+p {
+    font-family: 'Six Caps', sans-serif;
+    font-size: 2vw;
+    font-stretch: extra-expanded;
+}
+.overskrift {
+    text-align: center;
+}
+button.modalknap {
+    font-family: 'Satisfy', cursive;
+    font-size: 2vw;
+}
+
+/*li {
+    text-align: center;
+}*/
+
+img {
+    width: 100%;
+    padding: 1vw;
+}
+.btn {
+    border-color: red;
+    background-color: darkred;
+}
+.btn:hover {
+    background-color: indianred;
+}
