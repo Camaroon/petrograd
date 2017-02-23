@@ -6,7 +6,7 @@ function sidenVises() {
     // læs produktliste
     $.getJSON("http://petlatkea.dk/2017/dui/api/productlist?callback=?", visProduktListe);
 
-    visProdukt();
+    //visProdukt();
 }
 
 function visProduktListe(listen) {
@@ -49,5 +49,16 @@ function visProdukt(produkt) {
     }
 
     //append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
+    //document.querySelector(".produktliste").appendChild(klon);
+    if (produkt.kategori == 'forretter') {
+        document.querySelector(".forretter").appendChild(klon);
+    } else if (produkt.kategori == 'hovedretter') {
+        document.querySelector(".hovedretter").appendChild(klon);
+    } else if (produkt.kategori == 'sideorders') {
+        document.querySelector('.sideorders').appendChild(klon);
+    } else if (produkt.kategori == 'desserter') {
+        document.querySelector('.desserter').appendChild(klon);
+    } else if (produkt.kategori == 'drikkevarer') {
+        document.querySelector('.drikkevarer').appendChild(klon);
+    }
 }

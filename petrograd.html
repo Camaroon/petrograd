@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
 
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/petrogard.css" type="text/css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Satisfy|Share+Tech|Six+Caps" rel="stylesheet">
 
     <title>Restaurant Petrograd</title>
@@ -14,7 +16,7 @@
 
 <body>
     <!-- header img-->
-    <div class="header-img container-fluid">
+    <div class="container-fluid header-img">
         <div class=col-xs-12></div>
     </div>
     <!-- navbar -->
@@ -57,50 +59,93 @@
     </nav>
 
 
-    <!-- forretter -->
+
+    <!-- foretter-->
+
     <div class="container overskrift">
-        <section class="row">
-            <div class="col-xs-12 col-sm-12">
-                <h1> FORRETTER</h1>
+        <div class=col-xs-12 col-sm-3>
+            <div class="row produktliste forretter">
+                <h1>FORRETTER</h1>
                 <h2>start aftenen med en af vores smagsfulde forretter</h2>
+                <div class="forretter"></div>
             </div>
-        </section>
+        </div>
     </div>
 
-
-
-    <!-- menu template-->
-
-    <div class="row produktliste">
-        <!-- her skal produktet lægges ind -->
-
-
-        <!-- forret 1-->
-        <template id="produkt_template">
-
-            <div class="row col-xs-12 col-sm-4 col-sm-push-1">
-                <a href="#"><img class="data_billede" src="imgs/small/russisktapas-sm.jpg" alt="img"></a>
-                <h4 class="data_navn">DATA_NAVN</h4>
-                <h4 class="pris">Pris:<span class="data_pris"> DATA_PRIS</span>,-</h4>
-                <!-- TODO: sæt udsolgt class="udsolgt" ved udsolgt vare og class="rabat" ved rabat-->
-                <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
-                <!-- TODO: sæt udsolgt class ved rabat-->
-                <h4 class="text_udsolgt"> Denne ret er desværre udsolgt</h4>
-                <!-- skal kun indsættes ved udsolgte produkter -->
-                <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer </button>
+    <!-- hovedretter-->
+    <div class="container overskrift">
+        <div class=col-xs-12 col-sm-3>
+            <div class="row produktliste hovedretter">
+                <h1>HOVEDRETTER</h1>
+                <h2>fortsæt aftenen med en af vores lækre hovedretter</h2>
+                <div class="hovedretter"></div>
             </div>
-        </template>
+        </div>
+    </div>
+    <!-- sideorders-->
+    <div class="container overskrift">
+        <div class=col-xs-12 col-sm-3>
+            <div class="row produktliste sideorders">
+                <h1>SIDEORDERS</h1>
+                <h2>kunne du fristes til en sideorder?</h2>
+                <div class="sideorders"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- desserter-->
+    <div class="container overskrift">
+        <div class=col-xs-12 col-sm-3>
+            <div class="row produktliste desserter">
+                <h1>DESSERTER</h1>
+                <h2>slut aftenen af med den søde tand</h2>
+                <div class="desserter"></div>
+            </div>
+        </div>
+    </div>
+    <!-- drikkevarer-->
+    <div class="container overskrift">
+        <div class=col-xs-12 col-sm-3>
+            <div class="row produktliste drikkevarer">
+                <h1>DRIKKEVARER</h1>
+                <h2>komplimenter din middag med drikkevarer fra baren</h2>
+                <div class="drikkevarer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- her skal produktet lægges ind -->
+
+
+    <!-- forret 1-->
+    <template id="produkt_template">
+
+        <div class="row indhold col-xs-12 col-sm-4">
+            <a href="#"><img class="data_billede" src="imgs/small/russisktapas-sm.jpg" alt="img"></a>
+            <h4 class="data_navn">DATA_NAVN</h4>
+            <h4 class="pris">Pris:<span class="data_pris"> DATA_PRIS</span>,-</h4>
+            <!-- TODO: sæt udsolgt class="udsolgt" ved udsolgt vare og class="rabat" ved rabat-->
+            <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+            <!-- TODO: sæt udsolgt class ved rabat-->
+            <h4 class="text_udsolgt"> Denne ret er desværre udsolgt</h4>
+            <!-- skal kun indsættes ved udsolgte produkter -->
+            <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer </button>
+        </div>
+    </template>
+
+
+    <footer>
+        <!--<img class="footerimg" src="imgs/footer.jpg" alt="footer.img">-->
+        <p class="footerText"> JAAA du nåede bunden</p>
+
+    </footer>
 
 
 
 
 
-
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="js/petrograd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/petrograd.js"></script>
 </body>
 
 </html>

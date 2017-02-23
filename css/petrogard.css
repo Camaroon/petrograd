@@ -13,13 +13,42 @@ body {
     margin: 0;
     padding: 0;
 }
+.forretter .indhold:nth-child(3n+1) {
+    clear: both;
+}
+.hovedretter .indhold:nth-child(3n+1) {
+    clear: both;
+}
+.sideorders .indhold:nth-child(3n+1) {
+    clear: both;
+}
+.desserter .indhold:nth-child(3n+1) {
+    clear: both;
+}
+.drikkevarer .indhold:nth-child(3n+1) {
+    clear: both;
+}
 .header-img {
-    background-image: url(../imgs/medium/hvidvin-md.jpg);
+    background-image: url("../imgs/medium/hvidvin-md.jpg");
     background-size: cover;
     height: 285px;
     background-position: center;
     text-indent: -9999px;
     display: block;
+}
+.headertext {
+    color: aliceblue;
+    position: absolute;
+    top: 5vw;
+    left: 30vw;
+}
+.footerimg {
+    width: 100%;
+}
+.footerText {
+    color: aqua;
+    position: absolute;
+    left: 50vw;
 }
 h1 {
     font-family: 'Six Caps', sans-serif;
@@ -49,6 +78,9 @@ p {
 button.modalknap {
     font-family: 'Satisfy', cursive;
     font-size: 2vw;
+}
+button.modalknap:hover {
+    color: darkred;
 }
 
 /*li {
