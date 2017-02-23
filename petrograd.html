@@ -6,9 +6,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/petrogard.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?Share+Tech" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?Six+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy|Share+Tech|Six+Caps" rel="stylesheet">
+
     <title>Restaurant Petrograd</title>
 </head>
 
@@ -90,28 +89,38 @@
         </div>
     </div>
 
+    <!-- forret 1-->
+    <template id="produkt_template">
+        <div class="container">
+            <div class="row col-xs-12 col-sm-4">
+                <a href="#"><img class="data_billede" src="imgs/small/russisktapas-sm.jpg" alt="img"></a>
+                <h4 class="data_navn">DATA_NAVN</h4>
+                <h4 class="pris">Pris:<span class="data_pris"> DATA_PRIS</span>,-</h4>
+                <!-- TODO: sæt udsolgt class="udsolgt" ved udsolgt vare og class="rabat" ved rabat-->
+                <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+                <!-- TODO: sæt udsolgt class ved rabat-->
+                <h4 class="text_udsolgt"> Denne ret er desværre udsolgt</h4>
+                <!-- skal kun indsættes ved udsolgte produkter -->
+                <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer </button>
+            </div>
+    </template>
+    <!-- forret 2-->
+    <div class="row col-xs-12 col-sm-4">
+        <img src="imgs/small/rodbede-cabanossi-sm.jpg" alt="img2">
+        <h4>Rødbede cabanosi</h4>
+        <h4 class="udsolgt">Pris: 49,-</h4>
+        <h4 class="text_udsolgt"> Denne ret er desværre udsolgt</h4>
+        <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer</button>
+    </div>
 
-    <div class="container">
-        <div class="row col-xs-12 col-sm-4">
-            <img src="imgs/small/russisktapas-sm.jpg" alt="img">
-            <h4>Navn på ret</h4>
-            <p>Text</p>
-            <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer </button>
-        </div>
-
-        <div class="row col-xs-12 col-sm-4">
-            <img src="imgs/small/rodbede-cabanossi-sm.jpg" alt="img2">
-            <h4>Navn på ret</h4>
-            <p>Text</p>
-            <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer</button>
-        </div>
-
-        <div class=" row col-xs-12 col-sm-4">
-            <img src="imgs/small/syltedeloeg-sm.jpg" alt="img3">
-            <h4>Navn på ret</h4>
-            <p>Text</p>
-            <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer </button>
-        </div>
+    <!-- forret 3-->
+    <div class=" row col-xs-12 col-sm-4">
+        <img src="imgs/small/syltedeloeg-sm.jpg" alt="img3">
+        <h4>Syltede rødløg</h4>
+        <h4 class="rabat">Pris 39,-</h4>
+        <h4 class="rabat_pris">Pris 31,-</h4>
+        <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer </button>
+    </div>
     </div>
     <!--
     <template id="templateRecipe">

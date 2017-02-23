@@ -40,6 +40,9 @@ p {
 .overskrift {
     text-align: center;
 }
+.rabat_pris {
+    color: limegreen;
+}
 button.modalknap {
     font-family: 'Satisfy', cursive;
     font-size: 2vw;
