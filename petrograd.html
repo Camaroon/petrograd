@@ -12,10 +12,9 @@
 </head>
 
 
-
 <body>
     <!-- header img-->
-    <div class="header-img-full container-fluid">
+    <div class="header-img container-fluid">
         <div class=col-xs-12></div>
     </div>
     <!-- navbar -->
@@ -72,27 +71,14 @@
 
     <!-- menu template-->
 
-
-    <template id="templateRecipe">
-        <div class="col-xs-12 col-sm-4">
-            <img>
-            <h4>Navn på ret</h4>
-            <p>Text</p>
-            <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
-        </div>
-    </template>
+    <div class="row produktliste">
+        <!-- her skal produktet lægges ind -->
 
 
-    <div class="container">
-        <div class="row recipes">
-            <!-- TemplateRecipe ind her -->
-        </div>
-    </div>
+        <!-- forret 1-->
+        <template id="produkt_template">
 
-    <!-- forret 1-->
-    <template id="produkt_template">
-        <div class="container">
-            <div class="row col-xs-12 col-sm-4">
+            <div class="row col-xs-12 col-sm-4 col-sm-push-1">
                 <a href="#"><img class="data_billede" src="imgs/small/russisktapas-sm.jpg" alt="img"></a>
                 <h4 class="data_navn">DATA_NAVN</h4>
                 <h4 class="pris">Pris:<span class="data_pris"> DATA_PRIS</span>,-</h4>
@@ -103,72 +89,18 @@
                 <!-- skal kun indsættes ved udsolgte produkter -->
                 <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer </button>
             </div>
-    </template>
-    <!-- forret 2-->
-    <div class="row col-xs-12 col-sm-4">
-        <img src="imgs/small/rodbede-cabanossi-sm.jpg" alt="img2">
-        <h4>Rødbede cabanosi</h4>
-        <h4 class="udsolgt">Pris: 49,-</h4>
-        <h4 class="text_udsolgt"> Denne ret er desværre udsolgt</h4>
-        <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer</button>
-    </div>
-
-    <!-- forret 3-->
-    <div class=" row col-xs-12 col-sm-4">
-        <img src="imgs/small/syltedeloeg-sm.jpg" alt="img3">
-        <h4>Syltede rødløg</h4>
-        <h4 class="rabat">Pris 39,-</h4>
-        <h4 class="rabat_pris">Pris 31,-</h4>
-        <button type="button" class="btn btn-primary btn-lg open-modal modalknap" data-toggle="modal" data-target="#myModal" data-id="21"> se detaljer </button>
-    </div>
-    </div>
-    <!--
-    <template id="templateRecipe">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <img>
-            <h4>Navn på ret</h4>
-            <p>Text</p>
-            <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
-        </div>
-
-    </template>
--->
-    <!-- hovedret -->
-    <div class="container overskrift">
-        <section class="row">
-            <div class="col-xs-12 col-sm-12">
-                <br>
-                <h1> Hovedret</h1>
-                <h2>Få gang i smagsløgne med en af vores spektakulære hovedretter</h2>
-            </div>
-        </section>
-    </div>
+        </template>
 
 
-    <!--
-    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title">Modal title</h4> </div>
-                <div class="modal-body"> <img src="imgs/medium/boef-md.jpg" class="img-responsive" alt="billedtekst">
-                    <p class="data-lang-beskriv">LANGBESKRIVELSE</p>
-                    <p class="data-pris">Pris: <span>20</span>,-</p>
-                    <p class="data-udsolgt">UDSOLGT</p>
-                    <p class="data-rabat">RABAT</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
--->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="petrograd.js"></script>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/petrograd.js"></script>
 </body>
 
 </html>

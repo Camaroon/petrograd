@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.header-img-full {
+.header-img {
     background-image: url(../imgs/medium/hvidvin-md.jpg);
     background-size: cover;
     height: 285px;
