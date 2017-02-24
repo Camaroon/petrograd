@@ -45,11 +45,6 @@ body {
 .footerimg {
     width: 100%;
 }
-.footerText {
-    color: aqua;
-    position: absolute;
-    left: 50vw;
-}
 h1 {
     font-family: 'Six Caps', sans-serif;
     font-size: 10vw;

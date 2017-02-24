@@ -8,6 +8,7 @@ function sidenVises() {
 
     //visProdukt();
 }
+//http://petlatkea.dk/2017/dui/api/product?callback=?&id=21
 
 function visProduktListe(listen) {
     console.table(listen);
@@ -30,6 +31,12 @@ function visProdukt(produkt) {
 
     klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
 
+    //button tilpasses til id
+    klon.querySelector("button").dataset.id = produkt.id;
+
+
+
+
     if (produkt.udsolgt == false) {
         //produktet er ikke udsolgt
         // udsolgt text skal fjernes
@@ -50,6 +57,11 @@ function visProdukt(produkt) {
 
     //append klon til .produkt_liste
     //document.querySelector(".produktliste").appendChild(klon);
+    console.log("." + produkt.kategori)
+
+    document.querySelector("." + produkt.kategori).appendChild(klon);
+}
+/*
     if (produkt.kategori == 'forretter') {
         document.querySelector(".forretter").appendChild(klon);
     } else if (produkt.kategori == 'hovedretter') {
@@ -62,3 +74,4 @@ function visProdukt(produkt) {
         document.querySelector('.drikkevarer').appendChild(klon);
     }
 }
+*/
